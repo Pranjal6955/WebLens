@@ -1,0 +1,15 @@
+fastapi
+uvicorn
+requests
+beautifulsoup4
+httpx
+python-multipart
+jinja2
+wcag_contrast_ratio
+slowapi
+pytest
+black
+flake8
+mypy
+pytest-asyncio
+pytest-cov
