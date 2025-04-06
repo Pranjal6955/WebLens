@@ -1,6 +1,10 @@
-# WCAG Compliance Checker
+# WebLens: Web Accessibility Compliance Checker
 
-A Python-based tool for checking web accessibility compliance with WCAG guidelines.
+A comprehensive Python-based tool for checking web accessibility compliance with WCAG guidelines, helping developers create more inclusive web experiences.
+
+## Overview
+
+WebLens analyzes web pages for accessibility issues according to the Web Content Accessibility Guidelines (WCAG), providing detailed reports and suggestions for improvement.
 
 ## Setup Instructions
 
@@ -52,8 +56,8 @@ uvicorn main:app --reload --port 8000
 
 ## API Endpoints
 
-- POST `/check`: Check WCAG compliance for a given URL
-- GET `/health`: Health check endpoint
+- `POST /check`: Check WCAG compliance for a given URL
+- `GET /health`: Health check endpoint
 
 ## Development
 
@@ -65,13 +69,15 @@ pip install -r requirements-dev.txt
 ## Project Structure
 
 ```
-WCAG/
+WebLens/
 ├── backend/
 │   ├── main.py           # FastAPI application
-│   └── wcag_checker.py   # WCAG checking logic
+│   ├── wcag_checker.py   # WCAG checking logic
+│   └── utils/            # Utility functions
+├── tests/                # Test suite
 ├── requirements.txt      # Project dependencies
 ├── requirements-dev.txt  # Development dependencies
-└── README.md            # Project documentation
+└── README.md             # Project documentation
 ```
 
 ## Features
@@ -82,6 +88,10 @@ WCAG/
 - Performance metrics
 - Rate limiting
 - CORS support
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## License
 
